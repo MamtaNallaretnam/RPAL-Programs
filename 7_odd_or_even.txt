@@ -1,0 +1,5 @@
+
+//Program to check if number is odd or even
+
+let num(x)= (x/2)*2 eq x->'Even'|'Odd'
+in Print(num(-8))

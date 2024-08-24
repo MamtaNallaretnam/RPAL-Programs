@@ -1,0 +1,5 @@
+//Program to check if given number is palindrome or not
+
+let pal n = n eq rev (n, 0) -> 'Palindrome' | 'Not a Palindrome'
+    where rec rev (n, x) = n gr 0 -> rev (n/10, (x*10 + (n-(n/10)*10))) | x
+in Print(pal 110011)

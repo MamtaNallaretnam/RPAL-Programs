@@ -1,0 +1,5 @@
+//Program to find sum of first n numbers
+
+let sum(S) = count (S)
+		where rec count (N) = N eq 0 -> 0| count(N-1)+ N
+in Print (Sum (10))

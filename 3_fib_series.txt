@@ -1,0 +1,12 @@
+//Program to print Fibonacci series in a given range
+
+let fib_in_range (a, b) = 
+	b ls a -> 'wrong range' | 
+		a le 1 ->
+			(fib (a, b, 1, 0), print(' '), print(1), print(' '), print(0)) |
+			fib (a, b, 1, 0)
+where rec fib (a, b, x, y) = 
+	(x+y) ls a  -> fib (a, b, x + y, x) |
+		(x+y) ls b -> ((fib (a, b, x + y, x)), print(' '), print(x+y)) | nil			
+in
+fib_in_range (1,10)

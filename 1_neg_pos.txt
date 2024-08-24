@@ -1,0 +1,5 @@
+//Program to check whether the given number is positive or negative
+
+let num_sign(X)= X < 0 -> 'Negative' |X > 0 -> 'positive'|'Zero'
+in 
+Print(num_sign(-15))

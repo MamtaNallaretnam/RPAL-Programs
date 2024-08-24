@@ -1,0 +1,5 @@
+//Program to find greatest of three numbers
+
+
+let greatest(p,q,r)=(p>=q & p>=r)->p| (q>=p & q>=r)->q| (r>=q & r>=p)->r | 'error'
+in Print(greatest(5, 1, 13))
